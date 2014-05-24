@@ -4,7 +4,7 @@ import logging
 import logging.config
 import json
 
-logging.config.fileConfig("config/logging.json")
+logging.config.fileConfig("config/logging.conf")
 logger = logging.getLogger("temp")
 
 spi = spidev.SpiDev()
