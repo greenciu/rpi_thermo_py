@@ -18,13 +18,13 @@ def readadc(adcnum):
     return adcout
 
 adcInput = 0 # Pin 0
-logging.info("Reading temperature level from pin-0 :")
+logger.info("Reading temperature level from pin-0 :")
 
 while True:
     value = readadc(adcInput)
     voltage = value * 3.3
     voltage /= 1024.0
     tempCelsius = (voltage-0.5)*100
-    logging.info("Temp: %f", tempCelsius)
+    logger.info("Temp: %f", tempCelsius)
     time.sleep(2)
 
