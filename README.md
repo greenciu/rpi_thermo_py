@@ -58,3 +58,6 @@ Run the script
 `chmod +x temp.py `
 
 `python temp.py`
+
+
+For installing ELK stack instructions refer to: https://github.com/cubiks/rpi_thermo_py/wiki/Install-ELK-stack
